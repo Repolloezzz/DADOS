@@ -71,7 +71,7 @@
             var resultados=[];
             var jugadores=document.getElementById("jugadores").value
             for (var i=1; i<=jugadores;i++){
-                var dado=Math.floor(Math.random()*6);
+                var dado=Math.floor(Math.random()*6)+1;
                 resultados.push(dado);
             }
             var ganador=(resultados.indexOf(Math.max(...resultados)))+1
